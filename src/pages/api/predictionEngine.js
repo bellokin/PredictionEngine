@@ -52,7 +52,7 @@ export default async function handler(req, res) {
         const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
         const market = 'classic';
         const federation = 'UEFA';
-
+alert(today);
         const headers = {
             'x-rapidapi-host': 'football-prediction-api.p.rapidapi.com',
             'x-rapidapi-key': '31d0de31c9msheaa7eb6ded1c63ap185e5fjsned1e4f17678c',
