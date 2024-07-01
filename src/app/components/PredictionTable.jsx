@@ -4,7 +4,14 @@ import { format } from 'date-fns';
 import styles from './PredictionsTable.module.css'; // Import CSS module for styling
  
 function PredictionsTable({ predictions }) {
-    return (
+  const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+
+
+ alert("Today's test");
+alert(today);
+
+ 
+ return (
         <div className={styles.container}>
             <h2> Todays Predictions</h2>
             <div className={styles.tableWrapper}>
