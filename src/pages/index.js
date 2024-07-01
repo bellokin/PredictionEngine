@@ -12,7 +12,7 @@ function HomePage({ predictions }) {
 
 export async function getStaticProps() {
     try {
-        const res = await fetch('http://localhost:3000/api/predictionEngine');
+        const res = await fetch('https://predictionengine.onrender.com/api/predictionEngine');
         const data = await res.json();
 
         return {
