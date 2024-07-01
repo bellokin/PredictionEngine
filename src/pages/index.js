@@ -12,7 +12,7 @@ function HomePage({ predictions }) {
 
 export async function getStaticProps() {
     try {
-        const res = await fetch('https://predictionengine.onrender.com/api/predictionEngine');
+        const res = await fetch('https://prediction-engine.vercel.app/api/predictionEngine');
         const data = await res.json();
 
         return {
