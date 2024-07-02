@@ -38,7 +38,7 @@ async function sendEmail(predictions) {
 // Schedule email to be sent at 12 AM daily
 schedule.scheduleJob('0 0 * * *', async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/predictionEngine');
+        const response = await fetch('https://predictionengine.onrender.com/api/predictionEngine');
         const data = await response.json();
         await sendEmail(data.data);
     } catch (error) {
