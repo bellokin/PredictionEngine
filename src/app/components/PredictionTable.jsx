@@ -7,8 +7,8 @@ function PredictionsTable({ predictions }) {
   const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
 
 
- alert("Today's test");
-alert(today);
+ 
+ console.log("Todays Date",today);
 
  
  return (
